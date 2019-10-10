@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+body {
+	background-image: url("https://st4.depositphotos.com/3146979/20504/v/600/depositphotos_205041434-stock-video-abstract-animated-stained-background-seamless.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Ink Free";
+	color: #ff00ff;
+}
+
+#a {
+	font-family: 华文彩云;
+	font-size: 32px;
+	color: #6699ff;
+}
+
+table {
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 5px;
+	margin: 0 auto;
+}
+
+th {
+	border: 1px solid black;
+	padding: 15px;
+	text-align: center;
+	font-size: 18px;
+}
+
+td {
+	border: 1px solid black;
+	padding: 15px;
+	background-color: oldlace;
+	text-align: center;
+	font-size: 18px;
+	opacity: 0.6;
+}
+
+div {
+	text-align: center;
+}
+
+.div1 {
+	line-height: 40px;
+	width: 400px;
+	height: auto;
+	text-align: center;
+	font-size: 20px;
+	margin: 40px auto 0;
+	border: 3px double black;
+	opacity: 0.8;
+}

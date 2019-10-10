@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="index.js"></script>
+    <title>SUSTech Parking Record</title>
+</head>
+<body onload="initial()">
+<table>
+    <caption id="a"><h2>SUSTech Parking Record</h2></caption>
+    <tr>
+        <th>License Plate Number</th>
+        <th>Entrance Number</th>
+        <th>Date</th>
+        <th>Arrival Time</th>
+        <th>Departure Time</th>
+        <th>Staff Name</th>
+        <th>Staff Number</th>
+        <th>Status</th>
+        <th>Operation</th>
+    </tr>
+    <tbody id="tbody" style="display: none">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><input type="button" value="Delete" onclick="removeRow(this)"></td>
+    </tr>
+    </tbody>
+</table>
+<div id="add-button">
+    <br><input type="button" value="Add a record" onclick="onClickShow()"><br>
+</div>
+<div class="div1" id="add-box">
+    <form name="form1">
+        License Plate Number: 粤B<input type="text" name="plate-no"><br>
+        Entrance Number: <input type="text" name="entrance-no"><br>
+        Date:
+        <select id="year" onchange="setMonth()"></select> year
+        <select id="month" onchange="setDay()"></select> month
+        <select id="day"></select> day<br>
+        Arrival Time:
+        <select id="in-hour" onchange="setInMinute()"></select>:
+        <select id="in-minute"></select><br>
+        Departure Time:
+        <select id="out-hour" onchange="setOutMinute()"></select>:
+        <select id="out-minute"></select><br>
+        Staff Name: <input type="text" name="staff-name"><br>
+        Staff Number: <input type="text" name="staff-no"><br>
+        Status:
+        <input type="radio" name="status" value="In">In
+        <input type="radio" name="status" value="Out">Out<br>
+        <input type="button" value="Add Plate" onclick="onClickAddPlate()"><br>
+        <input type="button" value="Close" onclick="onClickHide()"><br>
+    </form>
+</div>
+</body>
+</html>
